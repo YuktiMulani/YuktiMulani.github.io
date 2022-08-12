@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<title>My Portfolio</title>
+<script language="javascript">
+    function add(type) {
+    
+        //Create an input type dynamically.
+        var element = document.createElement("input");
+    
+        //Assign different attributes to the element.
+        element.setAttribute("text", type);
+        element.setAttribute("value", value);
+        element.setAttribute("name", name);
+    
+    
+        var foo = document.getElementById("fooBar");
+    
+        //Append the element in page (in span).
+        foo.appendChild(element);
+    
+    }
+    </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./css/portfolio.css" type="text/css">
+<body class="w3-black">
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- Header/Home -->
+  <div class="card">
+    <div class="container">
+        <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+            <img src="images/center.jpg" alt="girl" class="w3-image" width="992" height="1108">
+            <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Yukti Mulani.</h1>
+            <p>Software Developer and Web Designer.</p>
+            <!-- Navbar on small screens (Hidden on medium and large screens) -->
+        <div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+            <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+              <a href="#" class="w3-bar-item w3-button" style="width:25% !important">HOME</a>
+              <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">ABOUT</a>
+              <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">CONTACT</a>
+              <a href="images/RESUME (1).pdf" download>DOWNLOAD RESUME</a>
+            </div>
+          </div>
+          <p> </p>
+            
+          </header>
+    </div>
+  </div>
+  
+
+  <!-- About Section -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
+    <h2>BASIC INFORMATION</h2>
+    <div class="card">
+        <div class="container">
+    <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <p>AGE:  </p>
+          <p>EMAIL:</p>
+          <p>LANGUAGE:  </p>
+          <p>CLASS SECTION:</p>
+          <p>STUDENT ID:</p>
+          <p>INSTRUCTOR:</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+          <p>19</p>
+          <p> ymulani@myseneca.ca</p>
+          <p>English,French,Hindi</p>
+          <p>ZAA</p>
+          <p>156809212</p>
+          <p>Muath Alzghool</p>
+        </div>
+      </div>
+      <p>Date:
+        <div id="current_date">
+        <script>
+        document.getElementById("current_date").innerHTML = Date();
+        </script>
+        </p>
+    
+    
+        <h2 class="w3-text-light-grey">ABOUT ME AND ACADEMIC HONESTY</h2>
+    <hr style="width:200px" class="w3-opacity">
+    <p>Hi guys this is Yukti Mulani.And heres my honesty statement.</p><p>            I declare that my assessment is wholly my own work in accordance with Seneca Academic Policy. No part of this assessment has been copied manually or electronically from any other source (including web sites) except for the information supplied by the WEB222 instructors and / or made available in this assessment for my use. I also declare that no part of this assignment has been distributed to other students.
+    </p>
+    <h3>Here is something about me.</h3>
+    <p>I am 19 and I am from India. People might think that name is a little difiicult to pronounce. I dont mind wrong Pronunciations though.
+        So like to do a lot of things I like o play sports like Badminton and I like to draw. But the most favourite activity of mine is website development.
+        I cannot live without this.I started coding at the age of 17 and I hated it cause it was one of the compulsory courses in my high school.
+        But as I started exploring and playing with our practice codes, it attracted me towards itself. The first ever language that I learned was python and it is my first love since then.
+    </p>
+        </div>
+    </div>
+  </div>
+    <div>
+    <h2>EDUCATION</h2>
+    <div class="row1">
+        <div class="column1">
+          <div class="card">
+            <div class="container">
+                <h4>
+                     Computer Programming and Analysis-Undergrduate Diploma.
+                </h4>
+                <p>
+                    Seneca College 
+                </p>
+                <p>
+                    Duration: 2022-2024
+                </p>
+            </div>
+            
+          </div>
+        </div>
+
+  <!-- Contact Section -->
+  <div class="row1">
+    <div class="column1">
+      <div class="card">
+        <div class="container">
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> TORONTO, UCA</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: +00 151515</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: ymulani@myseneca.ca</p>
+    </div><br>
+    <p>Let's get in touch.</p>
+
+    <form action="https://httpbin.org/post" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Address" required name="Address"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="City" required name="City"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="postal code" required name="Postal Code"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone" required name="Phone"></p>
+
+      <input type="radio" id="child" name="age" value="child">
+      <label for="child">Question</label><br>
+        <input type="radio" id="adult" name="age" value="adult" onclick="add(document.forms[0].element.value)">
+        <label for="adult" >Hiring</label><br>
+        <input type="radio" id="senior" name="age" value="senior">
+        <label for="senior">Comment</label>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- End Contact Section -->
+  </div>
+        </div>
+  </div>
+  </div>
+</div>
+
+
+  
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
+
+</body>
+</html>
