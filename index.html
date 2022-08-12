@@ -21,7 +21,7 @@
     }
     </script>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <link rel="stylesheet" href="./css/portfolio.css" type="text/css">
 <body class="w3-black">
 <!-- Page Content -->
@@ -133,8 +133,21 @@
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Address" required name="Address"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="City" required name="City"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="postal code" required name="Postal Code"></p>
+  <p><input list="browsers" name="City" id="browser" required name="City" placeholder="City"></p>
+      <datalist id="browsers">
+        <option value="Toronto">
+        <option value="Montreal">
+        <option value="Vancouver">
+        <option value="Quebec City">
+        <option value="Ottawa">
+          <option value="Calgary">
+            <option value="Winnipeg">
+            <option value="Edmonton">
+            <option value="Halifax">
+            <option value="Hamilton">
+        
+      </datalist>
+      <input type="text" pattern="[a-zA-Z][1-9][a-zA-Z]\s*[0-9][a-zA-Z][0-9]" title="Six character postal code" placeholder="postal code">
       <p><input class="w3-input w3-padding-16" type="text" placeholder="Phone" required name="Phone"></p>
 
       <input type="radio" id="child" name="age" value="child">
